@@ -381,59 +381,14 @@ button {
   }
 }
 
-.btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-
-  background-color: #5b9478;
-  color: #fff;
-  border-radius: 8px;
-  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.18);
-
-  padding: 1em 1.5em;
-
-  text-align: center;
-  line-height: 1.1;
-
-  transition: 100ms all ease-in-out;
-}
-
-.btn:hover,
-.btn:active {
-  background-color: #47755f;
-}
-
-.btn:focus {
-  outline-style: solid;
-  outline-color: transparent;
-  box-shadow: 0 0 0 4px #47755f;
+:root {
+  --brown-sugar: #be6e46ff;
+  --shadow-blue: #7286a0ff;
+  --magic-mint: #aaf0d1ff;
+  --ebony: #59594aff;
+  --oxford-blue: #101935ff;
 }
 
 body {
-  font-family: Sans-Serif;
-  padding: 16px;
-}
-
-.controls {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 2em;
-}
-
-.controls * + * {
-  margin-left: 1em;
-}
-
-.controlHeader {
-  text-align: center;
-  width: 100%;
-}
-
-.brightnessDisplay {
-  display: flex;
-  min-width: 2em;
-  font-size: 1.4rem;
-  align-items: center;
-  justify-content: center;
+  background-color: var(--shadow-blue) !important;
 }
