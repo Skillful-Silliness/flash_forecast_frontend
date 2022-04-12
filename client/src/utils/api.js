@@ -12,7 +12,7 @@ function buildQueryString(args) {
 function apiRequest(command, args) {
   const query = buildQueryString(args);
 
-  return fetch("http://192.168.1.150/api/" + command + query).then((response) =>
+  return fetch(`${API_HOST}/api/${command}${query}`).then((response) =>
     response.json()
   );
 }

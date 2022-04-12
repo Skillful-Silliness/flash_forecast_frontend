@@ -1,3 +1,4 @@
+const webpack = require("webpack");
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
@@ -13,6 +14,7 @@ module.exports = {
       template: path.join(__dirname, "../client/src/index.html"),
       filename: path.join(__dirname, "../client/dist/index.html"),
     }),
+    new webpack.DefinePlugin({ API_HOST: JSON.stringify(process.env.API_HOST || "") })
   ],
   module: {
     rules: [
