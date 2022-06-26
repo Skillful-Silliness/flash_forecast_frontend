@@ -1,2 +1,2 @@
 # weatherlights_frontend
-Frontend code for weatherlights web server
+Frontend code for Flash Forecast web server
